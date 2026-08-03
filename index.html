@@ -90,6 +90,20 @@ body {
     border-radius: 50%;
     border: 2px solid var(--accent);
     margin-bottom: 10px;
+    transition: transform 0.25s ease;
+}
+
+.avatar:hover {
+    animation: bounceUpDown 0.45s ease-in-out infinite alternate;
+}
+
+@keyframes bounceUpDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-6px);
+    }
 }
 
 .username {
@@ -100,6 +114,12 @@ body {
     color: var(--accent);
     text-shadow: 0 0 8px rgba(20, 184, 166, 0.35);
     cursor: default;
+    transition: transform 0.2s ease, font-size 0.2s ease;
+}
+
+.username:hover {
+    transform: scale(1.03);
+    font-size: 0.98rem;
 }
 
 .bio {
@@ -108,6 +128,13 @@ body {
     line-height: 1.5;
     color: var(--text);
     opacity: 0.9;
+    transition: transform 0.2s ease, font-size 0.2s ease;
+    cursor: default;
+}
+
+.bio:hover {
+    /* transform: scale(1.03); */
+    /* font-size: 0.83rem; */
 }
 
 .socials {
