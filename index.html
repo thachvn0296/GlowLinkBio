@@ -26,6 +26,10 @@
     --border: rgba(15, 23, 42, 0.1);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -34,14 +38,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     padding: 20px;
+    overflow: hidden;
 }
 
 .container {
     width: 100%;
     min-width: 280px;
-    max-width: 420px;
+    max-width: 800px;
     text-align: center;
 }
 
@@ -64,15 +69,20 @@ body {
     position: absolute;
     inset: -3px;
     border-radius: 20px;
-    border: 3px solid rgba(20, 184, 166, 0.45);
+    border: 2px solid rgba(20, 184, 166, 0.45);
     box-shadow:
         0 0 0 1px rgba(20, 184, 166, 0.1),
         0 0 90px rgba(20, 184, 166, 0.24),
         0 0 70px rgba(20, 184, 166, 0.12),
         0 0 90px rgba(20, 184, 166, 0.06);
-    opacity: 0.95;
+    opacity: 0;
+    transition: opacity 0.25s ease;
     z-index: -1;
     pointer-events: none;
+}
+
+.glass:hover::before {
+    opacity: 0.95;
 }
 
 .glass::after {
@@ -180,7 +190,7 @@ body {
     position: absolute;
     inset: 0;
     border-radius: 12px;
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     box-shadow: inset 0 0 0 1px rgba(20, 184, 166, 0.2);
     opacity: 0;
     transition: all 0.25s ease;
@@ -260,7 +270,7 @@ body {
     <div class="links">
         <a href="https://thachvn0296.github.io/OHTimer/" class="link-item">
             <div class="link-icon"><i class="fas fa-robot"></i></div>
-            <div class="link-text">Once Human Discord's Reset Timer Bot</div>
+            <div class="link-text">Once Human Discord's Reset Timer Bot - Invite Link</div>
         </a>
 
         <a href="https://github.com/thachvn0296/OHTimer" class="link-item">
@@ -269,8 +279,13 @@ body {
         </a>
 
         <a href="https://oh-calculator.vercel.app/" class="link-item">
-            <div class="link-icon"><i class="fas fa-globe"></i></div>
-            <div class="link-text">Once Human Damage Calculator</div>
+            <div class="link-icon"><i class="fa-solid fa-wrench"></i></div>
+            <div class="link-text">Once Human - Damage Calculator</div>
+        </a>
+
+        <a href="https://thachvn0296.github.io/OH-Starfall-Daily-Tracker/OH%20Timer.html" class="link-item">
+            <div class="link-icon"><i class="fa-solid fa-wrench"></i></div>
+            <div class="link-text">Once Human - S4 Starfall Daily Tracker</div>
         </a>
 
         <a href="https://docs.google.com/spreadsheets/d/1i2mwQgR5f7RE0r-GEv3peS3I6hh5LQtt/edit?gid=1880848336#gid=1880848336" class="link-item">
