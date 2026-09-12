@@ -20,7 +20,7 @@ npm install
 ### Run locally
 
 ```bash
-npx http-server .
+npx http-server
 ```
 
 Then open the URL shown in the terminal, typically `http://127.0.0.1:8080`.
