@@ -299,6 +299,16 @@
             font-weight: 600;
         }
 
+        .text-highlight {
+            color: var(--accent);
+        }
+
+        .text-discontinued {
+            color: #ff3131;
+            font-style: italic;
+            text-shadow: 0 0 5px rgba(255, 49, 49, 0.8), 0 0 10px rgba(255, 49, 49, 0.5);
+        }
+
         /* Toggle */
         .toggle {
             position: absolute;
@@ -360,7 +370,7 @@
                 <a href="https://docs.google.com/spreadsheets/d/1i2mwQgR5f7RE0r-GEv3peS3I6hh5LQtt/edit?gid=1880848336#gid=1880848336"
                     class="link-item" target="_blank" rel="noopener noreferrer">
                     <div class="link-icon"><i class="fa-solid fa-book"></i></div>
-                    <div class="link-text">Once Human Ebook - General info and In-game Formulas</div>
+                    <div class="link-text"><span class="text-highlight">Once Human Ebook - In-game Formulas and Builds</span></div>
                 </a>
 
                 <a href="https://forms.gle/FYJZq6WGGaE9vN4i8" class="link-item" target="_blank"
@@ -377,13 +387,15 @@
                 <a href="https://thachvn0296.github.io/OH-Starfall-Daily-Tracker/OH%20Timer.html" class="link-item"
                     target="_blank" rel="noopener noreferrer">
                     <div class="link-icon"><i class="fa-solid fa-wrench"></i></div>
-                    <div class="link-text">Once Human - S4 Starfall Daily Tracker</div>
+                    <div class="link-text">Once Human - S4 Starfall Daily Tracker - (<span
+                            class="text-discontinued">S4 Starfall is ended</span>)</div>
                 </a>
 
                 <a href="https://thachvn0296.github.io/OHTimer/" class="link-item" target="_blank"
                     rel="noopener noreferrer">
                     <div class="link-icon"><i class="fas fa-robot"></i></div>
-                    <div class="link-text">Once Human Discord's Reset Timer Bot - Invite Link (Temporary down)</div>
+                    <div class="link-text">Once Human Discord's Reset Timer Bot - Invite Link (<span
+                            class="text-discontinued">Temporary down</span>)</div>
                 </a>
 
                 <a href="https://github.com/thachvn0296/OHTimer" class="link-item" target="_blank"
